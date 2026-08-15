@@ -31,7 +31,7 @@ targets:
     mode: production
     workspace:
       host: https://dbc-804cc929-f662.cloud.databricks.com
-      root_path: /Workspace/Repos/bundle_uat/${bundle.name}/${bundle.target}
+      root_path: /Workspace/Repos/bund_${bundle.name}/${bundle.target}
     variables:
       catalog: workspace
       schema: uat
@@ -41,7 +41,7 @@ targets:
     mode: production
     workspace:
       host: https://dbc-804cc929-f662.cloud.databricks.com
-      root_path: /Workspace/Repos/bundle_prod/${bundle.name}/${bundle.target}
+      root_path: /Workspace/Repos/bund_${bundle.name}/${bundle.target}
     variables:
       catalog: workspace
       schema: prod
