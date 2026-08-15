@@ -1,0 +1,11 @@
+resources:
+  jobs:
+    hola_mundo_job:
+      name: "[${bundle.target}] Job Hola Mundo"
+      tasks:
+        - task_key: ejecutar_nb
+          notebook_task:
+            # Apuntas al notebook usando una ruta relativa desde donde está este YAML
+            notebook_path: ../src/bronze/notebooks/FACT/NB_TEST_HOLA_MUNDO.ipynb
+      # Esto le indica al bundle que suba el contenido de la carpeta src junto con el despliegue
+      # (si usas la configuración estándar de carpetas de código fuente)
